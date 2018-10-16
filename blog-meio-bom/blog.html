@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- SLIDER -->
+	<script src="js/slider/jquery.bxslider.min.js"></script>
+	<link href="js/slider/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- ZOOM IMAGE -->
+	<script src='js/zoom/jquery.elevateZoom-3.0.8.min.js'></script>	
+
+	<link rel="shortcut icon" href="./images/favicon.ico" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+
+	<title>Atividade</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+
+	<meta charset="UTF-8">
+	<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+				mode: 'fade',
+			  	captions: true
+			});
+		  $("#zoom1").elevateZoom();
+		  $("#zoom2").elevateZoom({
+			  zoomType	: "inner",
+			  cursor	: "crosshair"
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div id="frame">
+	<div id="top_container">
+	<div class="pad_container">
+		<div id="top">
+        	<img src="images/logo.png" alt="LOGO TOPE" style="width: 100px; height: auto;" />	
+        	<div class="marquee">
+        		<div>
+				    <span>MARQUEE FEITO COM CSS, VERY NICE TOPE</span>
+				    <span>TEXTO 2 MUITO MAIS TOPE</span>
+				</div>
+        	</div>
+		</div>
+		<div id="header">
+			<ul class="bxslider">
+			  <li><img src="images/content/img-title-about.jpg" /></li>
+			  <li><img src="images/content/img-title-blog.jpg" /></li>
+			  <li><img src="images/content/img-title-contact.jpg" /></li>
+			  <li><img src="images/content/img-title-features.jpg" /></li>
+			  <li><img src="images/content/img-title-pf.jpg" /></li>
+			  <li><img src="images/content/img-title-service.jpg" /></li>
+			</ul>
+		</div><!-- end #header -->
+		<div class="line"></div><!-- end .line -->
+		<div id="content">
+			<div id="main">
+			<div id="maincontent">
+					<div class="post">
+						<h2 class="posttitle"><a href="./single.html">Morbi Molestie Massa Vitae Enim Lacinia Blandit.</a></h2>
+						<span class="entry-utility">
+							<span class="entry-utility2">
+							<span class="userdate">November 27, 2010</span><span class="comment"><a href="#"></a></span>
+							</span>
+						</span>
+						<center>
+							<img id="zoom1" src="./images/small1.png" data-zoom-image="./images/large1.jpg" class="alignnone" />
+						</center>
+						<div class="entry-content">
+							<p>Phasellus bibendum ultricies mi, sit amet sagittis sapien sagittis in. Suspendisse massa enim, sagittis eget pulvinar sit amet, cursus molestie lacus. Nam malesuada accumsan venenatis. Mauris eget urna odio, ac scelerisque mi. Aliquam fermentum velit quis est dignissim placerat. Quisque a tellus eu turpis laoreet ornare.</p>
+						</div><!-- end .entry-content -->
+					</div><!-- end .post1 -->
+					
+					<div class="post">
+						<h2 class="posttitle"><a href="./single.html">Morbi Molestie Massa Vitae Enim Lacinia Blandit.</a></h2>
+						<span class="entry-utility">
+							<span class="entry-utility2">
+							<span class="userdate">November 27, 2010</span> 
+							</span>
+						</span>
+						<center>
+							<img id="zoom2" src="./images/small2.png" data-zoom-image="./images/large2.jpg" class="alignnone" />
+						</center>
+					  <div class="entry-content">
+							<p>Phasellus bibendum ultricies mi, sit amet sagittis sapien sagittis in. Suspendisse massa enim, sagittis eget pulvinar sit amet, cursus molestie lacus. Nam malesuada accumsan venenatis. Mauris eget urna odio, ac scelerisque mi. Aliquam fermentum velit quis est dignissim placerat. Quisque a tellus eu turpis laoreet ornare.</p>
+						</div><!-- end .entry-content -->
+					</div><!-- end .post2 -->
+					
+					
+					<div class="clear"></div><!-- clear float -->
+				</div><!-- end #maincontent -->
+				<div id="side">
+					<ul>
+						<li class="widget-container">
+							<h2 class="widget-title">Categories</h2>
+							<ul>
+								<li><a href="#">Our Design</a></li>
+								<li><a href="#">Company</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Favorite</a></li>
+
+								<li><a href="#">Other</a></li>
+							</ul>
+						</li>
+
+						<li class="widget-container widget-search">
+							<h2 class="widget-title">Search</h2>
+							<form method="post" action="">
+								<div><input type="text"  class="inputbox" placeholder="Pesquise algo aqui..." value="" /></div>
+							</form>
+						</li>
+					</ul>
+				</div><!-- end #side -->
+				<div class="clear"></div><!-- clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #content -->
+	</div><!-- end .pad_container -->	
+	</div><!-- end #top_container -->	
+		
+	<div id="bottom_container">
+		<div class="pad_container">
+		<div id="footer">
+			<div id="foot-col1">
+			<ul>
+				<li class="widget-container" >
+					<h2 class="widget-title">About</h2>
+					<div class="text-widget">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condimentum ultrices consequat eu, vehicula ac mauris. Ut adipiscing. Consectetur adipiscing elit. Aenean nisl orci, <a href="#">condimentum</a> ultrices consequat eu, vehicula ac mauris</div>
+				</li>
+			</ul>
+			</div><!-- end #foot-col1 -->
+			<div id="foot-col2">
+			<ul>
+				<li class="widget-container" >
+					<h2 class="widget-title">Lorem ipsum</h2>
+					<div class="text-widget">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condimentum ultrices consequat eu, vehicula ac mauris. Ut adipiscing. Consectetur adipiscing elit. Aenean nisl orci, <a href="#">condimentum</a> ultrices consequat eu, vehicula ac mauris</div>
+				</li>
+			</ul>
+			</div><!-- end #foot-col2 -->
+			<div id="foot-col3">
+			<ul>
+				<li class="widget-container">
+					<h2 class="widget-title">Contact Information</h2>
+					<div class="text-widget">
+						<p>Lorem ipsum<br />
+							Curitiba/PR<br /><br />
+							+55 41 9999-9999<br />
+							<a href="http://www.meusite.com">www.meusite.com</a><br />
+						</p>
+						
+					</div>
+				</li>
+			</ul>
+			</div><!-- end #foot-col3 -->
+			<div class="clear"></div>
+		</div><!-- end #footer -->
+		</div><!-- end .pad_container -->
+		<div id="footer-copyright"><div id="copyright">Copyright  &copy;2011 - All rights reserved.</div></div><!-- end #footer-copyright -->
+	</div><!-- end #bottom_container -->
+</div><!-- end #frame -->
+		
+		
+<script type="text/javascript"> Cufon.now(); </script> 
+</body>
+</html>

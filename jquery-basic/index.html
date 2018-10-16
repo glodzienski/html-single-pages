@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://up.blackboard.com/bbcswebdav/pid-1026999-dt-content-rid-2703514_1/courses/200782/Atividade.html -->
+<html lang="pt">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Atividade</title>
+
+	<style type="text/css">
+	body {
+		font:					12px Arial, sans-serif;
+	}
+	ul {
+        float:      			left;
+        margin:     			0 30px 30px;
+        padding:    			0;
+        width:  				300px;
+	}
+	li {
+        background:             #eee;
+        background-image:       -webkit-gradient(linear,left top,left bottom,from(#fdfdfd),to(#eee));
+        background-image:       -webkit-linear-gradient(#fdfdfd,#eee);
+        background-image:       -moz-linear-gradient(#fdfdfd,#eee);
+        background-image:       -ms-linear-gradient(#fdfdfd,#eee);
+        background-image:       -o-linear-gradient(#fdfdfd,#eee);
+        background-image:       linear-gradient(#fdfdfd,#eee);
+        border: 				1px solid #ccc;
+        border-top: 			1px solid #eee;
+        color:                  #444;
+        cursor: 				pointer;
+        font-weight:            bold;
+        list-style:             none;
+        padding:                5px;
+        text-shadow:            0 1px 1px #fff;
+	}
+	li:hover {
+        border:                 1px solid #999;
+        background:             #eee;
+	}
+
+	.circulo {
+        background:             #9a4545;
+        -webkit-border-radius:  100px;
+        -moz-border-radius:     100px;
+        border-radius:          100px;
+        height:                 200px;
+        position:               absolute;
+        right:                  30px;
+        top:                    230px;
+        width:                  200px;
+	}
+
+	.conteudo {
+		background: 			#f0f0f0;
+        float:      			left;
+        margin:     			0 30px 30px;
+		padding: 				10px;
+	}
+
+	.quadrado {
+        background:             #456f9a;
+        height:                 150px;
+        position:               absolute;
+        right:                  10px;
+        top:                    40px;
+        width:                  150px;
+	}
+
+	.triangulo {
+        position:               absolute;
+        right:                  200px;
+        top:                    20px;
+        width:          		0;
+        height:         		0;
+        border-left:    		50px solid transparent;
+        border-right:   		50px solid transparent;
+        border-bottom:  		80px solid #7d9a45;
+	}
+
+	</style>
+	<script>
+		$(document).ready(function() {
+	    	// Trocar cor de fundo da página
+	    	$(".botao1").click(function(){
+	    		$("body").css("background-color","green");
+	    	});	
+
+	    	//Mostrar alerta
+	    	$(".botao2").click(function(){
+	    		alert('ALERTA TOPE');
+	    	});
+
+	    	//Anime o circulo
+	    	$(".botao3").click(function(){
+	    		$(".circulo").animate({
+	  				width: "230px",
+	  				height: "230px",
+	    			opacity: 0.8,
+	    			right: "100px",
+	    			top	: "350px"
+	  				}, 1500 );
+	    	});
+
+	    	//Alterar o tamanho do quadrado
+	    	$(".botao4").click(function(){
+	    		$(".quadrado").css({"width":"100px","height":"100px"});
+	    	});
+
+	    	//Mostrar esconder o triangulo
+	    	$(".botao5").click(function(){
+	    		$(".triangulo").toggle("hide");
+	    	});
+	    	// Altera o texto da div com duplo clique
+	    	$(".botao6").dblclick(function(){
+	    		$(".conteudo").text("TOPEEEEEEEEEEEE");
+	    	});
+
+	    	$(".botao7").click(function(){
+	    		$(".circulo").animate({
+	    			"width":"320px",
+	    			"height":"300px",
+	    			"right":"648px",
+	    			"top":"80px",
+	    			"fontSize": "3em",
+	    			"overflow":"hidden"
+
+	    		},1000).html("TOPEEEEE<img src='https://media.giphy.com/media/pCO5tKdP22RC8/giphy.gif' width='300' height='auto'>");
+	    		$(".quadrado").animate({
+	    			"width":"320px",
+	    			"height":"300px",
+	    			"right":"648px",
+	    			"top":"80px"	    			
+	    		},1000);
+	    		$(".triangulo").hide();
+	    		$(".conteudo").animate({
+	    			"width":"300px",
+	    			"height":"50px",
+	    		},1000);
+	    	});
+		
+	    });		
+	</script>
+</head>
+
+<body cz-shortcut-listen="true">
+
+	<ul>
+		<li class="botao1">
+			Trocar cor de fundo da página
+		</li>
+		<li class="botao2">
+			Mostrar alerta
+		</li>
+		<li class="botao3">
+			Animar o círculo
+		</li>
+		<li class="botao4">
+			Alterar o tamanho do quadrado
+		</li>
+		<li class="botao5">
+			Mostrar/esconder triângulo
+		</li>
+		<li class="botao6">
+			Altera o texto da div com duplo clique
+		</li>
+		<li class="botao7">
+			Faça algo legal!!!
+		</li>
+	</ul>
+	
+
+	<div class="quadrado"></div>
+	<div class="circulo"></div>
+	<div class="triangulo"></div>
+	<div id="box" class="conteudo">Texto</div>
+	
+
+</body></html>

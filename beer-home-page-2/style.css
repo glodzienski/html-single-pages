@@ -1,0 +1,484 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #961D46 url(images/img01.jpg) repeat;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 16px;
+	color: #8A8985;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	font-weight: normal;
+	color: #7D7764;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 44px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+img {
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #CA4C44;
+}
+
+a:hover {
+}
+
+#wrapper {
+	background-color: #FFFFFF;
+	width: 1000px;
+	margin:0 auto;
+	padding: 1.5em;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px 20px;
+	background: url(images/img01.jpg) no-repeat left top;
+}
+
+/* Banner */
+
+#banner {
+	overflow: hidden;
+	height: 100%;
+	margin:30px auto;
+}
+
+#banner .image-style {
+	border: 15px solid #F4F4F4;
+}
+
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 150px;
+	margin: 30px 0;
+	padding: 0;
+	color: #000000;
+}
+
+/* Splash */
+
+#splash {
+	overflow: hidden;
+	padding: 50px 0px;
+	border-bottom: 1px dashed #E7E2DC;
+	letter-spacing: -3px;
+	text-align: center;
+	font-size: 48px;
+}
+
+#splash span {
+	color: #313131;
+}
+
+
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 500px;
+	margin: 30px auto;
+	padding: 0;
+}
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 45px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	margin-right: 1px;
+	padding: 10px 0px 15px 30px;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	color: #CE92A6;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item:first-child a {
+	padding-left: 0;
+}
+
+#menu .current_page_item a {
+}
+
+/* Page */
+
+#page {
+	padding: 30px 0px 0px 0px;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 620px;
+	padding: 0px 40px 0px 0px;
+	background: url(images/img05.jpg) no-repeat right 40px;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post .title {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -3px;
+}
+
+.post .title a {
+	border: none;
+	text-transform: lowercase;
+	color: #7D7764;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 0px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.links {
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 320px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: #787878;
+}
+
+#sidebar h2 {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -3px;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Three Column Footer Content */
+
+#footer-content {
+	background: url(images/img04.png) no-repeat center top;
+	color: #E2B8C6;
+}
+
+#footer-bg {
+	overflow: hidden;
+	padding: 70px 30px;
+	text-align: justify;
+}
+
+#footer-content h2 {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -2px;
+	text-shadow: 1px 2px 0px #861F40;
+	text-transform: lowercase;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+
+#column1 {
+	float: left;
+	width: 32%;
+	margin-right: 20px;
+}
+
+#column2 {
+	float: left;
+	width: 32%;
+}
+
+#column3 {
+	float: right;
+	width: 32%;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background: url(images/img04.png) no-repeat center top;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 10px;
+	line-height: normal;
+	text-align: center;
+	color: #C76485;
+}
+
+#footer a {
+	color: #C76485;
+}
+
+.box1 {
+	overflow: hidden;
+	height: 300px;
+	background: url(images/img04.jpg) no-repeat center bottom;
+}
+
+.list-style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style1 li {
+	padding: 7px 0px 7px 0px;
+	border-top: 1px dashed #E7E2DC;
+}
+
+.list-style1 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+
+.list-style2 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style2 li {
+	padding: 7px 0px 7px 0px;
+	background: url(images/img06.png) repeat-x left top;
+}
+
+.list-style2 a {
+	color: #E2B8C6;
+}
+
+.list-style2 a:hover {
+	color: #C76485;
+}
+
+.list-style2 .first {
+	padding-top: 0px;
+	background: none;
+}
+
+/*RESPONSIVE*/
+*{
+	box-sizing: border-box;
+}
+@media (max-width: 900px){
+	#column1 {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#column2 {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#column3 {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#wrapper{
+	    width: 100%;
+	    padding: 1.5em;
+	}
+	#logo {
+	    float: none;
+	    margin: 0 auto;
+	    padding: 30px;
+	}
+	#menu{
+		float:none;
+		margin:0 auto;
+	}
+	#menu ul{
+		float:none;
+		padding: 0;
+	}
+	#splash{
+    	letter-spacing: 0; 
+        font-size: 1.75em;
+	}
+	#content{
+		background:none;
+		width:100%;
+		padding: 0;
+	}
+	.post .title{
+		font-size: 2.5em;
+	}
+	#sidebar{
+		width: 100%;
+		text-align: center;
+	}
+	.post{
+		text-align: center;
+	}
+	#footer-bg h2{
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px){
+	#menu{
+		margin: 0 auto;
+	    width: 100%;
+	    float: none;
+	}
+
+	#menu ul{
+		margin:0 auto 30px auto;;
+		float: none;
+	}
+	#menu li{
+		float:none;
+		padding: 5px;
+	}
+	#menu a{
+		display: block;
+	    padding: 0;
+	}
+	#splash{
+    	letter-spacing: 0; 
+        font-size: 1.75em;
+	}
+	#content{
+		background:none;
+		width:100%;
+		padding: 0;
+	}
+	#sidebar{
+		width: 100%;
+		text-align: center;
+	}
+	.post{
+		text-align: center;
+	}
+	#footer-bg h2{
+		text-align: center;
+	}
+}
