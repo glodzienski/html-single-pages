@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gallery background="../Images/background.png" frameColor="green" frameWidth="15" imagePadding="20" displayTime="5" enableRightClickOpen="true">
+<image>
+   <url>Images/home/1.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/12.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/13.jpg</url>
+   <caption></caption>
+  <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/14.jpg</url>
+   <caption></caption>
+  <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/15.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/16.jpg</url>
+   <caption></caption>
+<width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/17.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/18.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/19.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/20.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/21.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/22.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/23.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/11.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/24.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/25.jpg</url>
+   <caption></caption>
+  <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/26.jpg</url>
+   <caption></caption>
+   <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/27.jpg</url>
+   <caption></caption>
+ <width>250</width>
+   <height>300</height>
+</image>
+<image>
+   <url>Images/home/28.jpg</url>
+   <caption></caption>
+  <width>250</width>
+   <height>300</height>
+</image><image>
+   <url>Images/home/29.jpg</url>
+   <caption></caption>
+  <width>250</width>
+   <height>300</height>
+</image><image>
+   <url>Images/home/30.jpg</url>
+   <caption></caption>
+ <width>250</width>
+   <height>300</height>
+</image>
+</gallery>
