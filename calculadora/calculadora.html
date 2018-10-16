@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<script>
+		function soma(){
+			var n1 = Number(document.getElementById("n1").value);
+			var n2 = Number(document.getElementById("n2").value);
+			document.getElementById("resultado").value	=	n1+n2;
+		}
+
+		function subtracao(){
+			var n1 = Number(document.getElementById("n1").value);
+			var n2 = Number(document.getElementById("n2").value);
+			document.getElementById("resultado").value	=	n1-n2;
+		}
+
+		function divisao(){
+			var n1 = Number(document.getElementById("n1").value);
+			var n2 = Number(document.getElementById("n2").value);
+			document.getElementById("resultado").value	=	n1/n2;
+		}
+
+		function multiplicacao(){
+			var n1 = Number(document.getElementById("n1").value);
+			var n2 = Number(document.getElementById("n2").value);
+			document.getElementById("resultado").value	=	n1*n2;
+		}
+
+		function limpar(){
+			document.getElementById("n1").value = '';
+			document.getElementById("n2").value = '';
+			document.getElementById("resultado").value = '';	
+		}
+	</script>
+	<style>
+		.calc{
+			width: 300px;
+			height: 400px;
+			background: #4b70a7;
+			padding: 10px 50px;
+			border-radius: 10px;
+			position: relative;
+			margin: 0 auto;
+			top:50px;
+			border: 3px solid #000;
+		}
+
+		.calc button {
+			background: #fb94bf;
+			border:1px solid #f1d1de;
+			padding: 10px;
+			margin-left: 5px;
+			width: 40px;
+			height: auto;
+			font-weight: bold;
+		}
+
+		.calc button:hover{
+			background: #da548c;
+			border:2px solid #fb94bf;	
+		}
+
+		.calc input{
+			padding: 5px;
+		}
+
+		.marquee {
+		    top: 6em;
+		    position: fixed;
+		    box-sizing: border-box;
+		    animation: marquee 8s linear infinite;
+		    font-size: 30px;
+		}
+
+		@keyframes marquee {
+		    0%   { top:   35em }
+		    100% { top: -11em }
+		}
+	</style>
+</head>
+<body>
+	<div class="marquee">
+		CALCULADORA TOPE ;)
+	</div>
+	<div class="calc">	
+	<center>
+		<p>
+			<h1 style="color:white;">Calculadora JS</h1>
+			<label for="n1">Valor 1</label>
+			<p><input type="text" id="n1" value=""></p>
+
+			<label for="n2">Valor 2</label>
+			<p><input type="text" id="n2" value=""></p>
+
+			<label >Operações</label>
+			<p>
+				<button id="soma" onclick="soma()">
+					<!-- Icone em base 64 -->
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE2IDE2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xNCw2aC00VjJjMC0xLjEwNC0wLjg5Ni0yLTItMlM2LDAuODk2LDYsMmwwLjA3MSw0SDJDMC44OTYsNiwwLDYuODk2LDAsOHMwLjg5NiwyLDIsMmw0LjA3MS0wLjA3MSAgIEw2LDE0YzAsMS4xMDQsMC44OTYsMiwyLDJzMi0wLjg5NiwyLTJWOS45MjlMMTQsMTBjMS4xMDQsMCwyLTAuODk2LDItMlMxNS4xMDQsNiwxNCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+				</button>
+				<button id="subtracao" onclick="subtracao()">
+					<!-- Icone em base 64 -->
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE2IDE2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xNCw2SDJDMC44OTYsNiwwLDYuODk2LDAsOHMwLjg5NiwyLDIsMmgxMmMxLjEwNCwwLDItMC44OTYsMi0yUzE1LjEwNCw2LDE0LDZ6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				</button>
+				<button id="divisao" onclick="divisao()">
+					<!-- Icone em base 64 -->
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQyIDQyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MiA0MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0zNy4wNTksMTZIMjZIMTZINC45NDFDMi4yMjQsMTYsMCwxOC4yODIsMCwyMXMyLjIyNCw1LDQuOTQxLDVIMTZoMTBoMTEuMDU5QzM5Ljc3NiwyNiw0MiwyMy43MTgsNDIsMjEgICBTMzkuNzc2LDE2LDM3LjA1OSwxNnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxjaXJjbGUgY3g9IjIxIiBjeT0iNiIgcj0iNSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iMjEiIGN5PSIzNiIgcj0iNSIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+				</button>
+				<button id="multiplicacao" onclick="multiplicacao()">
+					<!-- Icone em base 64 -->
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEyIDEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMiAxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xMS40MTQsMC41ODZjLTAuNzgtMC43ODEtMi4wNDgtMC43ODEtMi44MjgsMEw2LDMuMTcyTDMuNDE0LDAuNTg2ICAgYy0wLjc4LTAuNzgxLTIuMDQ4LTAuNzgxLTIuODI4LDBjLTAuNzgxLDAuNzgxLTAuNzgxLDIuMDQ3LDAsMi44MjhMMy4xNzEsNkwwLjU4Niw4LjU4NmMtMC43ODEsMC43ODEtMC43ODEsMi4wNDcsMCwyLjgyOCAgIEMwLjk3NiwxMS44MDUsMS40ODgsMTIsMiwxMnMxLjAyNC0wLjE5NSwxLjQxNC0wLjU4Nkw2LDguODI4bDIuNTg2LDIuNTg2QzguOTc2LDExLjgwNSw5LjQ4OCwxMiwxMCwxMiAgIGMwLjUxMiwwLDEuMDI0LTAuMTk1LDEuNDE0LTAuNTg2YzAuNzgxLTAuNzgxLDAuNzgxLTIuMDQ3LDAtMi44MjhMOC44MjksNmwyLjU4NS0yLjU4NkMxMi4xOTUsMi42MzMsMTIuMTk1LDEuMzY3LDExLjQxNCwwLjU4NnoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+				</button>
+				<button id="limpar" onclick="limpar()">
+					<!-- Icone em base 64 -->
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4Ni40IDQ4Ni40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODYuNCA0ODYuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00NDYsNzBIMzQ0LjhWNTMuNWMwLTI5LjUtMjQtNTMuNS01My41LTUzLjVoLTk2LjJjLTI5LjUsMC01My41LDI0LTUzLjUsNTMuNVY3MEg0MC40Yy03LjUsMC0xMy41LDYtMTMuNSwxMy41ICAgIFMzMi45LDk3LDQwLjQsOTdoMjQuNHYzMTcuMmMwLDM5LjgsMzIuNCw3Mi4yLDcyLjIsNzIuMmgyMTIuNGMzOS44LDAsNzIuMi0zMi40LDcyLjItNzIuMlY5N0g0NDZjNy41LDAsMTMuNS02LDEzLjUtMTMuNSAgICBTNDUzLjUsNzAsNDQ2LDcweiBNMTY4LjYsNTMuNWMwLTE0LjYsMTEuOS0yNi41LDI2LjUtMjYuNWg5Ni4yYzE0LjYsMCwyNi41LDExLjksMjYuNSwyNi41VjcwSDE2OC42VjUzLjV6IE0zOTQuNiw0MTQuMiAgICBjMCwyNC45LTIwLjMsNDUuMi00NS4yLDQ1LjJIMTM3Yy0yNC45LDAtNDUuMi0yMC4zLTQ1LjItNDUuMlY5N2gzMDIuOXYzMTcuMkgzOTQuNnoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMjQzLjIsNDExYzcuNSwwLDEzLjUtNiwxMy41LTEzLjVWMTU4LjljMC03LjUtNi0xMy41LTEzLjUtMTMuNXMtMTMuNSw2LTEzLjUsMTMuNXYyMzguNSAgICBDMjI5LjcsNDA0LjksMjM1LjcsNDExLDI0My4yLDQxMXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMTU1LjEsMzk2LjFjNy41LDAsMTMuNS02LDEzLjUtMTMuNVYxNzMuN2MwLTcuNS02LTEzLjUtMTMuNS0xMy41cy0xMy41LDYtMTMuNSwxMy41djIwOC45ICAgIEMxNDEuNiwzOTAuMSwxNDcuNywzOTYuMSwxNTUuMSwzOTYuMXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMzMxLjMsMzk2LjFjNy41LDAsMTMuNS02LDEzLjUtMTMuNVYxNzMuN2MwLTcuNS02LTEzLjUtMTMuNS0xMy41cy0xMy41LDYtMTMuNSwxMy41djIwOC45ICAgIEMzMTcuOCwzOTAuMSwzMjMuOCwzOTYuMSwzMzEuMywzOTYuMXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+				</button>
+			</p>
+			<label for="resultado">Resultado</label>
+			<p><input type="text" id="resultado" value=""></p>
+		</p>
+	</center>
+	</div>
+</body>
+</html>
