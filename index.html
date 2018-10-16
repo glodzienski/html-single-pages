@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+    <!-- CSS INTERNO -->
+    <style>
+      body{
+        font-family: 'Quicksand', sans-serif;
+      }
+      .espacamento{
+        padding: 50px 20px 50px 20px;
+
+      }
+      .carousel{
+        max-height: 100vh;
+        overflow: hidden;
+      }
+      .carousel-caption{
+        background: rgba(0, 0, 0, 0.47);
+        padding: 30px 0;
+      }
+      #logogrande{
+        border-bottom: 1px solid #ccc;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+      }
+      /* Correção no Carousel para a imagem se adequar ao tamanho da tela */
+      @media screen and (min-width: 991px) {
+        .carousel-caption {
+          bottom: 30%;
+        }
+      }
+      @media screen and (max-width: 990px) {
+        #logogrande{
+          display: none;
+        }  
+        .carousel-caption {
+          bottom: 30%;
+        }
+      }
+/*      @media screen and (min-width: 576px) {
+        .carousel-caption {
+          bottom: 20%;
+        }
+      }*/
+
+      @media screen and (max-width: 575px) {   
+        .mobile-esp{
+          margin-top:40px;
+          border-top: 1px solid #d4cdcd;
+          padding-top: 20px;
+        }
+      }
+    </style>
+    <title>Game of Thrones</title>
+  </head>
+  <body class="container-fluid"> 
+    <!-- MENU MOBILE -->
+    <nav id="logopequena" class="navbar fixed-top navbar-light bg-light" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top"><img class="img-fluid" src="images/logoMin.png" width="50px" alt="Game of Thrones"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#personagens-principais">Personagens principais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sobre-a-serie">Sobre a série</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#entre-em-contato">Entre em contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#alguma-duvida">Alguma dúvida</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MENU NORMAL -->
+    <nav id="logogrande" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top"><img class="img-fluid" src="images/logoMed.png" alt="Game of Thrones"></a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#personagens-principais">Personagens principais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sobre-a-serie">Sobre a série</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#entre-em-contato">Entre em contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#alguma-duvida">Alguma dúvida</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção 1 - Banners Carousel -->
+    <div class="row" id="top">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="images/wallpaper-1.jpg" alt="Game of Thrones">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Série de maior sucesso</h1>
+              <br>
+              <p><a class="btn btn-lg btn-dark" href="#" role="button">Leia mais...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="images/wallpaper-2.jpg" alt="Game of Thrones">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Night King</h1>
+              <p>Um dos muitos vilões da série, e o maior é o Night King</p>
+              <p><a class="btn btn-lg btn-dark" href="#" role="button">Leia mais...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="images/wallpaper-3.png" alt="Game of Thrones">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Jon Snow</h1>
+              <p>O herdeiro do trono de ferro.</p>
+              <p><a class="btn btn-lg btn-dark" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="images/wallpaper-4.png" alt="Game of Thrones">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Drogon, o maior dragão da Daenerys</h1>
+              <p>O dragão mais poderoso dos três.</p>
+              <p><a class="btn btn-lg btn-dark" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    <!-- /.carousel -->
+
+    <!-- Seção 2 -->
+      <div class="row bg-light" id="personagens-principais">
+        <div class="container espacamento">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <p><img src="images/cersei-lannister.png" class="img-fluid" alt="Cersei Lannister"></p>
+            <h4>Cersei Lannister</h4>
+            <p class="text-justify">
+              Rainha Cersei I Lannister, é a viúva do rei Robert Baratheon e Rainha Regente dos Sete Reinos. Ela é a filha de Lorde Tywin Lannister, irmã gêmea de Jaime Lannister,com quem tem um caso incesto,e irmã mais velha de Tyrion Lannister. Cersei tem uma relação incestuosa com Jaime, que é secretamente o pai de seus três filhos.
+            </p>
+            <button type="button" class="btn btn-dark">Leia mais</button>
+          </div>
+          <div class="col-md-4 text-center mobile-esp">
+            <p><img src="images/jon-snow.png" class="img-fluid" alt="Jon Snow"></p>
+            <h4>Jon Snow</h4>
+            <p class="text-justify">
+              Jon Snow, nascido Aegon Targaryen, quando Eddard Stark voltou para casa após a Rebelião de Robert, ele apresentou Jon como seu filho bastardo, nunca dizendo a ninguém, nem mesmo a Jon, quem era sua mãe. Eddard tomou a incomum decisão de criar Jon em seu castelo em Winterfell junto de seus filhos legítimos.
+            </p>
+            <button type="button" class="btn btn-dark">Leia mais</button>
+          </div>
+          <div class="col-md-4 text-center mobile-esp">
+            <p><img src="images/daenerys-targaryen.png" class="img-fluid" alt="Daenerys Targaryen"></p>
+            <h4>Daenerys Targaryen</h4>
+            <p class="text-justify">
+              A única filha e a mais nova de todos os filhos de Aerys II Targaryen, o Rei Louco, e sua irmã esposa Rhaella Targaryen. Seu pai morreu durante o Saque de Porto Real, antes de ela ter nascido. O usurpador Robert Baratheon instalou-se como rei, tendo derrotado Aerys na conquista conhecido como a Rebelião de Robert.
+            </p>            
+            <button type="button" class="btn btn-dark">Leia mais</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    <!--// Seção 2 -->
+
+    <!-- Seção 3 -->
+      <div class="row bg-dark text-light" id="sobre-a-serie">
+        <div class="container espacamento">
+          <div class="row">
+          <div class="col-md-5">
+            <h3>Sobre a série</h3>
+            <b>Game of Thrones é uma série de televisão norte-americana e baseada na série de livros A Song of Ice and Fire, de George R. R. Martin.</b>
+            <br>
+            <br>
+            <p class="text-justify">
+              Há muito tempo, num tempo esquecido, uma força destruiu o equilíbrio das estações. Numa terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir a segurança de todos. Depois de um verão de dez anos, um inverno rigoroso promete chegar com um futuro mais sombrio. Enquanto isso, conspirações e rivalidades correm no jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.
+            </p>
+          </div>
+          <div class="col-md-7 text-center">
+            <center>
+              <div id="carousel-secundario" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/slider-01.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slider-02.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slider-03.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slider-04.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-secundario" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-secundario" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </center>
+          </div>
+          </div>
+        </div>
+      </div>
+    <!-- //Seção 3 -->
+    <!-- Seção 4 -->
+      <div class="row bg-light" id="entre-em-contato">
+        <div class="container espacamento">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Entre em contato</h2>
+              <form>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <span class="align-middle">got@hbo.com</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEndereco" class="col-sm-2 col-form-label">Endereço</label>
+                  <div class="col-sm-10">
+                    <span class="align-middle">1401 S Grand Ave, Los Angeles, CA 90015, EUA</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputTel" class="col-sm-2 col-form-label">Telefone</label>
+                  <div class="col-sm-10">
+                    <span class="align-middle">41 4141 4141</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0897765471436!2d-118.26735111126058!3d34.0376860757971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e727d5c4cf1a595!2sDignity+Health+California+Hospital+Medical+Center!5e0!3m2!1spt-BR!2sbr!4v1506285680825" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>  
+    <!-- //Seção 4 -->
+
+    <!-- Seção 5 -->
+      <div class="row" id="alguma-duvida">
+        <div class="container espacamento">
+          <div class="row justify-content-md-center">
+            <div class="col-md-8 col-sm-10">
+              <p class="text-center">
+                <h2>Alguma dúvida?</h2>
+                <h6>Preencha o formulário abaixo e entraremos em contato</h6>
+              </p>
+              <form>
+                <div class="form-group row">
+                  <label for="inputNome" class="col-sm-4 col-form-label">Nome</label>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" id="inputNome" placeholder="Digite seu nome">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" id="inputEmail" placeholder="Digite seu email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputTel" class="col-sm-4 col-form-label">Telefone</label>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" id="inputTel" placeholder="xx xxxx xxxx">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputComent" class="col-sm-4 col-form-label">Comentário</label>
+                  <div class="col-sm-8">
+                    <textarea required class="form-control" id="inputComent" placeholder="Digite sua dúvida" rows="5"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-8"></div>
+                  <div class="col-md-2">
+                    <button type="button" class="btn btn-dark">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- //Seção 5 -->
+    <!-- FOOTER -->    
+      <div class="row bg-dark text-light espacamento">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <p class="text-center">
+                Site desenvolvido por<br> Crystopher Glodzienski Cardoso
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="text-center">              
+                Redes Sociais<br>
+                <!-- Facebook -->
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MDguNzg4IDQwOC43ODgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwOC43ODggNDA4Ljc4ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM0NzU5OTM7IiBkPSJNMzUzLjcwMSwwSDU1LjA4N0MyNC42NjUsMCwwLjAwMiwyNC42NjIsMC4wMDIsNTUuMDg1djI5OC42MTZjMCwzMC40MjMsMjQuNjYyLDU1LjA4NSw1NS4wODUsNTUuMDg1ICBoMTQ3LjI3NWwwLjI1MS0xNDYuMDc4aC0zNy45NTFjLTQuOTMyLDAtOC45MzUtMy45ODgtOC45NTQtOC45MmwtMC4xODItNDcuMDg3Yy0wLjAxOS00Ljk1OSwzLjk5Ni04Ljk4OSw4Ljk1NS04Ljk4OWgzNy44ODIgIHYtNDUuNDk4YzAtNTIuOCwzMi4yNDctODEuNTUsNzkuMzQ4LTgxLjU1aDM4LjY1YzQuOTQ1LDAsOC45NTUsNC4wMDksOC45NTUsOC45NTV2MzkuNzA0YzAsNC45NDQtNC4wMDcsOC45NTItOC45NSw4Ljk1NSAgbC0yMy43MTksMC4wMTFjLTI1LjYxNSwwLTMwLjU3NSwxMi4xNzItMzAuNTc1LDMwLjAzNXYzOS4zODloNTYuMjg1YzUuMzYzLDAsOS41MjQsNC42ODMsOC44OTIsMTAuMDA5bC01LjU4MSw0Ny4wODcgIGMtMC41MzQsNC41MDYtNC4zNTUsNy45MDEtOC44OTIsNy45MDFoLTUwLjQ1M2wtMC4yNTEsMTQ2LjA3OGg4Ny42MzFjMzAuNDIyLDAsNTUuMDg0LTI0LjY2Miw1NS4wODQtNTUuMDg0VjU1LjA4NSAgQzQwOC43ODYsMjQuNjYyLDM4NC4xMjQsMCwzNTMuNzAxLDB6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="  width="25px"/>
+                <!-- Twitter -->
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MTAuMTU1IDQxMC4xNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQxMC4xNTUgNDEwLjE1NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM3NkE5RUE7IiBkPSJNNDAzLjYzMiw3NC4xOGMtOS4xMTMsNC4wNDEtMTguNTczLDcuMjI5LTI4LjI4LDkuNTM3YzEwLjY5Ni0xMC4xNjQsMTguNzM4LTIyLjg3NywyMy4yNzUtMzcuMDY3ICBsMCwwYzEuMjk1LTQuMDUxLTMuMTA1LTcuNTU0LTYuNzYzLTUuMzg1bDAsMGMtMTMuNTA0LDguMDEtMjguMDUsMTQuMDE5LTQzLjIzNSwxNy44NjJjLTAuODgxLDAuMjIzLTEuNzksMC4zMzYtMi43MDIsMC4zMzYgIGMtMi43NjYsMC01LjQ1NS0xLjAyNy03LjU3LTIuODkxYy0xNi4xNTYtMTQuMjM5LTM2LjkzNS0yMi4wODEtNTguNTA4LTIyLjA4MWMtOS4zMzUsMC0xOC43NiwxLjQ1NS0yOC4wMTQsNC4zMjUgIGMtMjguNjcyLDguODkzLTUwLjc5NSwzMi41NDQtNTcuNzM2LDYxLjcyNGMtMi42MDQsMTAuOTQ1LTMuMzA5LDIxLjktMi4wOTcsMzIuNTZjMC4xMzksMS4yMjUtMC40NCwyLjA4LTAuNzk3LDIuNDgxICBjLTAuNjI3LDAuNzAzLTEuNTE2LDEuMTA2LTIuNDM5LDEuMTA2Yy0wLjEwMywwLTAuMjA5LTAuMDA1LTAuMzE0LTAuMDE1Yy02Mi43NjItNS44MzEtMTE5LjM1OC0zNi4wNjgtMTU5LjM2My04NS4xNGwwLDAgIGMtMi4wNC0yLjUwMy01Ljk1Mi0yLjE5Ni03LjU3OCwwLjU5M2wwLDBDMTMuNjc3LDY1LjU2NSw5LjUzNyw4MC45MzcsOS41MzcsOTYuNTc5YzAsMjMuOTcyLDkuNjMxLDQ2LjU2MywyNi4zNiw2My4wMzIgIGMtNy4wMzUtMS42NjgtMTMuODQ0LTQuMjk1LTIwLjE2OS03LjgwOGwwLDBjLTMuMDYtMS43LTYuODI1LDAuNDg1LTYuODY4LDMuOTg1bDAsMGMtMC40MzgsMzUuNjEyLDIwLjQxMiw2Ny4zLDUxLjY0Niw4MS41NjkgIGMtMC42MjksMC4wMTUtMS4yNTgsMC4wMjItMS44ODgsMC4wMjJjLTQuOTUxLDAtOS45NjQtMC40NzgtMTQuODk4LTEuNDIxbDAsMGMtMy40NDYtMC42NTgtNi4zNDEsMi42MTEtNS4yNzEsNS45NTJsMCwwICBjMTAuMTM4LDMxLjY1MSwzNy4zOSw1NC45ODEsNzAuMDAyLDYwLjI3OGMtMjcuMDY2LDE4LjE2OS01OC41ODUsMjcuNzUzLTkxLjM5LDI3Ljc1M2wtMTAuMjI3LTAuMDA2ICBjLTMuMTUxLDAtNS44MTYsMi4wNTQtNi42MTksNS4xMDZjLTAuNzkxLDMuMDA2LDAuNjY2LDYuMTc3LDMuMzUzLDcuNzRjMzYuOTY2LDIxLjUxMyw3OS4xMzEsMzIuODgzLDEyMS45NTUsMzIuODgzICBjMzcuNDg1LDAsNzIuNTQ5LTcuNDM5LDEwNC4yMTktMjIuMTA5YzI5LjAzMy0xMy40NDksNTQuNjg5LTMyLjY3NCw3Ni4yNTUtNTcuMTQxYzIwLjA5LTIyLjc5MiwzNS44LTQ5LjEwMyw0Ni42OTItNzguMjAxICBjMTAuMzgzLTI3LjczNywxNS44NzEtNTcuMzMzLDE1Ljg3MS04NS41ODl2LTEuMzQ2Yy0wLjAwMS00LjUzNywyLjA1MS04LjgwNiw1LjYzMS0xMS43MTJjMTMuNTg1LTExLjAzLDI1LjQxNS0yNC4wMTQsMzUuMTYtMzguNTkxICBsMCwwQzQxMS45MjQsNzcuMTI2LDQwNy44NjYsNzIuMzAyLDQwMy42MzIsNzQuMThMNDAzLjYzMiw3NC4xOHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="  width="25px"/>
+                <!-- Instagram -->
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1NTEuMDM0IDU1MS4wMzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU1MS4wMzQgNTUxLjAzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8xXyk7IiBkPSJNMzg2Ljg3OCwwSDE2NC4xNTZDNzMuNjQsMCwwLDczLjY0LDAsMTY0LjE1NnYyMjIuNzIyICAgYzAsOTAuNTE2LDczLjY0LDE2NC4xNTYsMTY0LjE1NiwxNjQuMTU2aDIyMi43MjJjOTAuNTE2LDAsMTY0LjE1Ni03My42NCwxNjQuMTU2LTE2NC4xNTZWMTY0LjE1NiAgIEM1NTEuMDMzLDczLjY0LDQ3Ny4zOTMsMCwzODYuODc4LDB6IE00OTUuNiwzODYuODc4YzAsNjAuMDQ1LTQ4LjY3NywxMDguNzIyLTEwOC43MjIsMTA4LjcyMkgxNjQuMTU2ICAgYy02MC4wNDUsMC0xMDguNzIyLTQ4LjY3Ny0xMDguNzIyLTEwOC43MjJWMTY0LjE1NmMwLTYwLjA0Niw0OC42NzctMTA4LjcyMiwxMDguNzIyLTEwOC43MjJoMjIyLjcyMiAgIGM2MC4wNDUsMCwxMDguNzIyLDQ4LjY3NiwxMDguNzIyLDEwOC43MjJMNDk1LjYsMzg2Ljg3OEw0OTUuNiwzODYuODc4eiIvPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8yXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8yXyk7IiBkPSJNMjc1LjUxNywxMzNDMTk2LjkzMywxMzMsMTMzLDE5Ni45MzMsMTMzLDI3NS41MTZzNjMuOTMzLDE0Mi41MTcsMTQyLjUxNywxNDIuNTE3ICAgUzQxOC4wMzQsMzU0LjEsNDE4LjAzNCwyNzUuNTE2UzM1NC4xMDEsMTMzLDI3NS41MTcsMTMzeiBNMjc1LjUxNywzNjIuNmMtNDguMDk1LDAtODcuMDgzLTM4Ljk4OC04Ny4wODMtODcuMDgzICAgczM4Ljk4OS04Ny4wODMsODcuMDgzLTg3LjA4M2M0OC4wOTUsMCw4Ny4wODMsMzguOTg4LDg3LjA4Myw4Ny4wODNDMzYyLjYsMzIzLjYxMSwzMjMuNjExLDM2Mi42LDI3NS41MTcsMzYyLjZ6Ii8+CgkKCQk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzNfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQxOC4zMSIgeTE9IjQuNTciIHgyPSI0MTguMzEiIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPGNpcmNsZSBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzNfKTsiIGN4PSI0MTguMzEiIGN5PSIxMzQuMDciIHI9IjM0LjE1Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="25px"/>
+                <!-- YouTube -->
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NjEuMDAxIDQ2MS4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ2MS4wMDEgNDYxLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiNGNjFDMEQ7IiBkPSJNMzY1LjI1Nyw2Ny4zOTNIOTUuNzQ0QzQyLjg2Niw2Ny4zOTMsMCwxMTAuMjU5LDAsMTYzLjEzN3YxMzQuNzI4ICBjMCw1Mi44NzgsNDIuODY2LDk1Ljc0NCw5NS43NDQsOTUuNzQ0aDI2OS41MTNjNTIuODc4LDAsOTUuNzQ0LTQyLjg2Niw5NS43NDQtOTUuNzQ0VjE2My4xMzcgIEM0NjEuMDAxLDExMC4yNTksNDE4LjEzNSw2Ny4zOTMsMzY1LjI1Nyw2Ny4zOTN6IE0zMDAuNTA2LDIzNy4wNTZsLTEyNi4wNiw2MC4xMjNjLTMuMzU5LDEuNjAyLTcuMjM5LTAuODQ3LTcuMjM5LTQuNTY4VjE2OC42MDcgIGMwLTMuNzc0LDMuOTgyLTYuMjIsNy4zNDgtNC41MTRsMTI2LjA2LDYzLjg4MUMzMDQuMzYzLDIyOS44NzMsMzA0LjI5OCwyMzUuMjQ4LDMwMC41MDYsMjM3LjA1NnoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="25px"/>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="text-center">
+                Baseado na série Game of Thrones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- //FOOTER -->    
+  
+  </body>
+  <!-- Jquery Api -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+  <!-- JavaScript minified Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</html>
